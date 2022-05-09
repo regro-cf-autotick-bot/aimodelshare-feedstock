@@ -1,5 +1,5 @@
 {% set name = "aimodelshare" %}
-{% set version = "0.0.94" %}
+{% set version = "0.0.98" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 36b35968e0605fa57610eee39b568a491666ed4d76b5287ea8d276fb83294dd4
+  sha256: 15c89eb6e97474805a015f570a916e0cb8c59c84bd7be465adf45b44b3c2bdd7
 
 build:
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  
+
 requirements:
   host:
     - pip
@@ -51,11 +51,11 @@ test:
     - aimodelshare.sam
 
 about:
-  home: "https://www.modelshare.org"
+  home: https://www.modelshare.org
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "Deploy locally saved machine learning models to a live rest API and web-dashboard.  Share it with the world via modelshare.org"
+  summary: Deploy locally saved machine learning models to a live rest API and web-dashboard.  Share it with the world via modelshare.org
   doc_url: https://github.com/AIModelShare/aimodelshare/blob/master/README.md
   dev_url: https://github.com/AIModelShare/aimodelshare
 
