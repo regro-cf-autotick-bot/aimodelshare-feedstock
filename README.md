@@ -121,5 +121,6 @@ Feedstock Maintainers
 =====================
 
 * [@mikedparrott](https://github.com/mikedparrott/)
+* [@VijayKalmath](https://github.com/VijayKalmath/)
 * [@raudipra](https://github.com/raudipra/)
 
