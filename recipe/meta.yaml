@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -19,11 +19,15 @@ requirements:
     - pip
     - python >=3.7
   run:
+    - absl-py
     - astunparse ==1.6.3
     - boto3 ==1.18.2
     - botocore ==1.21.2
     - docker-py ==5.0.0
+    - ipython
+    - jinja2
     - keras2onnx >=1.7.0
+    - networkx ==2.6.3
     - onnx >=1.9.0
     - onnxconverter-common >=1.7.0
     - onnxmltools >=1.6.1
@@ -32,6 +36,8 @@ requirements:
     - pyjwt ==2.2.0
     - pympler ==0.9
     - python >=3.7
+    - regex
+    - requests
     - scikit-learn ==0.24.2
     - seaborn >=0.11.2
     - shortuuid >=1.0.8
@@ -40,7 +46,7 @@ requirements:
     - tf2onnx
     - pytorch >=1.8.1
     - urllib3 ==1.25.11
-    - wget ==1.20.3
+    - python-wget ==3.2
     - xgboost >=0.90
     - dill
 
