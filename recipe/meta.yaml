@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -43,7 +43,6 @@ requirements:
     - seaborn >=0.11.2
     - shortuuid >=1.0.8
     - skl2onnx >=1.8.0
-    - tensorflow >=2.5.0
     - pytorch >=1.8.1
     - python-wget ==3.2
     - dill
