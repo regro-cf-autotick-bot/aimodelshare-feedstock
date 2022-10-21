@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -26,6 +26,7 @@ requirements:
     - dill
     - docker-py ==5.0.0
     - ipython
+    - importlib-resources
     - jinja2
     - keras2onnx >=1.7.0
     - networkx ==2.6.3
