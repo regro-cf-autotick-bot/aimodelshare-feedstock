@@ -1,5 +1,5 @@
 {% set name = "aimodelshare" %}
-{% set version = "0.0.159" %}
+{% set version = "0.0.164" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f5da87f34cfa8e80ea0d9085ed0aa48ddd80598cae12b2ee96f6bc9e61278132
+  sha256: 0404aa94bf37ecd0040f2a20de24e469441607ba41ddd5c31bea33de5ccf969f
 
 build:
   noarch: python
